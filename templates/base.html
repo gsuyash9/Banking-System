@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        
         /* google fonts */
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
@@ -16,7 +17,16 @@
             background: #fafafa;
         }
 
-        h1,
+        h1 {
+            margin-bottom:70px;
+            
+            padding-left:20px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bolder;
+            font-size: 30px;
+            color: #444;
+        }
+
         h2,
         h3,
         h4,
@@ -44,8 +54,11 @@
         }
 
         nav {
+            width: 100%;
+            height: 120px;
             display: flex;
             justify-content: space-between;
+
             align-items: flex-end;
             margin-bottom: 120px;
         }
@@ -70,7 +83,7 @@
 
         .btn {
             border-radius: 36px;
-            background: #FEE996;
+            background: #444;
         }
 
         form h2 {
@@ -174,44 +187,101 @@
             width: 100px;
             margin: -30px auto 20px;
         }
-        table {
-            width:100%;
 
-            
-          }
-          
-          th {
+        table {
+            width: 100%;
+
+
+        }
+
+        th {
             width: 1.5em;
             height: 1.5em;
-            background-color: #FEE996;
+            background-color: #444;
             text-align: center;
             vertical-align: middle;
             margin-left: 50px;
-          }
-          td{
+        }
+
+        td {
             width: 1.5em;
             height: 1.5em;
             text-align: center;
-            
-          }
-          
-          tr:nth-child(even) {background-color: #f2f2f2;}
+
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
         footer {
+            width: 100%;
+            height: 120px;
+            top: 100px;
             text-align: center;
             margin-top: 120px;
-            color: #aaa;
+            color: #fafafa;
+            background-color: #444;
+        }
+
+        #copyright {
+
+            color: #fafafa;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #444;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #444;
+            color: white;
+        }
+
+        .fa-google {
+            background: #444;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #444;
+            color: white;
         }
     </style>
+    <title>My app</title>
 </head>
 
 <body>
     <nav>
-        <h1><a href="/">My Bank</a></h1>
+        <h1 ><a href="/">My Bank</a></h1>
+        <p style=" margin-right:270px; color:#f13252; font-weight:bolder;font-size:20px;">My personal Bank where can
+            access user data and transactions detail </p>
         
     </nav>
+
     {% block content %}
     {% endblock %}
-    <footer>Copyright 2021 Suyash Gupta</footer>
+    <footer>
+        <p id="copyright">Copyright 2021 Suyash Gupta</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </footer>
 
 </body>
 
