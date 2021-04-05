@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <header>
 
@@ -8,25 +8,25 @@
       <ul class="recipes" style="display: inline;">
       
         <li class="recipe" >
-          <img src="" alt="Account Management">
+          <img src="{% static 'images/download.png' %}"  alt="Account Management">
           <a href=''><h4>Account Service</h4></a>
           
           
         </li>
         <li class="recipe" >
-          <img src="" alt="Card Management">
+          <img src="{% static 'images/card.png' %}" alt="Card Management">
           <a href=''><h4>Cards service</h4></a>
           
           
         </li>
         <li class="recipe" >
-          <img src="" alt="Loans">
+          <img src="{% static 'images/loan.png' %}" alt="Loans">
           <a href=''><h4>Loan Portal</h4></a>
           
           
         </li>
         <li class="recipe" >
-          <img src="" alt="Customers">
+          <img src="{% static 'images/All customers.png' %}" alt="Customers">
           <a href=''><h4>All Customers</h4></a>
           
         </li>
